@@ -4,19 +4,20 @@ import Logo from "../components/images/Logo";
 import Copyright from "./images/navbar/Copyright";
 import Smile from "./images/navbar/Smile";
 import SwipeMotion from "../pages/api/SwipeMotion";
-import MouseMotion from "../pages/api/MouseMotion";
+import TouchMotion from "../pages/api/TouchMotion";
 import ScrollPosition from "../pages/api/ScrollPosition";
 import { useState } from "react";
 
 const NavbarMobile = () => {
   let scrollUpdater = ScrollPosition();
-  let y: number = MouseMotion().mouseY;
+  let y: number = TouchMotion().touchY;
   let swipe: number = SwipeMotion();
 
   const [menuOpen, setMenuOpen] = useState(false);
 
   const checkSwipe = (node: any) => {
     setMenuOpen(node.classList.contains("menu-active"));
+    console.log(swipe, y);
     if (swipe < 1 && menuOpen) {
       node.classList.remove("menu-active");
     } else if (swipe > 0 && !menuOpen && y < 200) {
