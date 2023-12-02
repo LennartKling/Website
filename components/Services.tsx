@@ -24,12 +24,12 @@ const Services = () => {
         </div>
       </div>
       <div className="md:flex w-full mt-8 lg:mt-28 p-4 md:p-16 lg:p-24">
-        <div className="enter-left flex justify-center md:mr-4 lg:mr-8 w-full h-[300px]">
-          <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] max-w-[280px] lg:max-w-[500px] w-[240px] lg:w-[500px]">
+        <div className="enter-left flex justify-center md:mr-4 lg:mr-8 w-full">
+          <div className="max-w-[280px] lg:max-w-[500px] w-[240px] lg:w-[500px] overflow-hidden">
             <WebDev />
           </div>
         </div>
-        <div className="enter-right px-4 md:px-6 w-full mt-8 md:mt-16 lg:mt-10">
+        <div className="px-4 md:px-6 w-full mt-8 md:mt-16 lg:mt-10">
           <p className="w-full cormorant text-5xl lg:text-7xl text-center md:text-start">
             WEBSITES
           </p>
@@ -41,7 +41,7 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="w-full p-6 md:p-16 lg:p-24">
+      <div className="w-full p-6 mt-20 md:p-16 lg:p-24">
         <div className="w-full flex justify-center">
           <div className="relative w-[250px] h-[200px] md:w-[300px] md:h-[240px] lg:w-[400px] lg:h-[300px] mt-20 md:mt-32 lg:mt-52">
             <GuidanceGraphic />
