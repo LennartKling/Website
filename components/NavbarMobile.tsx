@@ -21,7 +21,7 @@ const NavbarMobile = () => {
     /*if (swipe < 1000 && menuOpen) {
       node.classList.remove("menu-active");
     } else */
-    if (swipe > 0 && !menuOpen && y < 200) {
+    if (swipe > 0 && !menuOpen && y < 400) {
       node.classList.add("menu-active");
     }
   };
@@ -59,75 +59,65 @@ const NavbarMobile = () => {
         }}
       >
         <div className="h-[60%] flex flex-col">
-          <div className="flex items-center w-[70%] mx-auto h-full">
+          <button
+            className="flex items-center w-[70%] mx-auto h-full"
+            onClick={() => {
+              document
+                .getElementById("work")
+                ?.scrollIntoView({ behavior: "smooth" });
+              document
+                .getElementsByClassName("menu-active")[0]
+                ?.classList.remove("menu-active");
+            }}
+          >
             <div className="invert">
               <Smile />
             </div>
-            <button
-              className="font-black ml-4 text-4xl text-black"
-              onClick={() => {
-                document
-                  .getElementById("work")
-                  ?.scrollIntoView({ behavior: "smooth" });
-                document
-                  .getElementsByClassName("menu-active")[0]
-                  ?.classList.remove("menu-active");
-              }}
-            >
+            <button className="font-black ml-4 text-4xl text-black">
               work
             </button>
-          </div>
-          <div className="flex items-center w-[70%] mx-auto h-full">
+          </button>
+          <button
+            className="flex items-center w-[70%] mx-auto h-full"
+            onClick={() => {
+              document
+                .getElementById("work")
+                ?.scrollIntoView({ behavior: "smooth" });
+              document
+                .getElementsByClassName("menu-active")[0]
+                ?.classList.remove("menu-active");
+            }}
+          >
             <div className="invert">
               <Smile />
             </div>
-            <button
-              className="font-black ml-4 text-4xl text-black"
-              onClick={() => {
-                document
-                  .getElementById("services")
-                  ?.scrollIntoView({ behavior: "smooth" });
-                document
-                  .getElementsByClassName("menu-active")[0]
-                  ?.classList.remove("menu-active");
-              }}
-            >
+            <button className="font-black ml-4 text-4xl text-black">
               services
             </button>
-          </div>
-          <div className="flex items-center w-[70%] mx-auto h-full">
+          </button>
+          <button
+            className="flex items-center w-[70%] mx-auto h-full"
+            onClick={() => {
+              document
+                .getElementById("services")
+                ?.scrollIntoView({ behavior: "smooth" });
+              document
+                .getElementsByClassName("menu-active")[0]
+                ?.classList.remove("menu-active");
+            }}
+          >
             <div className="invert">
               <Smile />
             </div>
-            <button
-              className="font-black ml-4 text-4xl text-black"
-              onClick={() => {
-                document
-                  .getElementById("about")
-                  ?.scrollIntoView({ behavior: "smooth" });
-                document
-                  .getElementsByClassName("menu-active")[0]
-                  ?.classList.remove("menu-active");
-              }}
-            >
+            <button className="font-black ml-4 text-4xl text-black">
               about
             </button>
-          </div>
+          </button>
           <div className="flex items-center w-[70%] mx-auto h-full">
             <div className="invert">
               <Smile />
             </div>
-            <button
-              className="font-black ml-4 text-4xl text-black"
-              onClick={() => {
-                document
-                  .getElementById("contact")
-                  ?.scrollIntoView({ behavior: "smooth" });
-                document
-                  .getElementsByClassName("menu-active")[0]
-                  ?.classList.remove("menu-active");
-              }}
-            >
+            <button className="font-black ml-4 text-4xl text-black">
               contact
             </button>
           </div>

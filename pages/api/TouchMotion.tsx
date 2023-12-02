@@ -19,9 +19,9 @@ const TouchMotion = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("pointermove", updateTouchPosition);
+    window.addEventListener("touchmove", updateTouchPosition);
     return () => {
-      window.removeEventListener("pointermove", updateTouchPosition);
+      window.removeEventListener("touchmove", updateTouchPosition);
     };
   }, []);
 
