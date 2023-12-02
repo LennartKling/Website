@@ -23,7 +23,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="flex justify-center items-center w-full md:w-[50vw] bg-white">
-          <div className="relative w-[500px] h-[500px] md:h-[700px] enter-zoom">
+          <div className="relative enter-zoom">
             <Together />
           </div>
         </div>

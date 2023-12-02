@@ -9,7 +9,7 @@ const Navbar = () => {
   let scroll_y: any = ScrollPosition().y;
 
   return (
-    <nav className="hidden lg:visible hover:bg-[#1FD0FD] group z-50 fixed lg:flex h-[100px] w-full px-10 items-center bg-opacity-0 hover:bg-opacity-100 hover:shadow-xl ease-in duration-300">
+    <div className="hidden lg:visible w-full hover:bg-[#1FD0FD] group z-50 fixed lg:flex h-[100px] px-10 items-center bg-opacity-0 hover:bg-opacity-100 hover:shadow-xl ease-in duration-300">
       <div className="group-hover:invert duration-300 ease-in">
         <Logo />
       </div>
@@ -105,7 +105,7 @@ const Navbar = () => {
       <div className="group-hover:invert duration-300 ease-in">
         <Copyright />
       </div>
-    </nav>
+    </div>
   );
 };
 

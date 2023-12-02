@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Leam</title>
+        <title>Luis Kameter</title>
         <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <Navbar />

@@ -8,29 +8,29 @@ import GuidanceGraphic from "./images/services/GuidanceGraphic";
 
 const Services = () => {
   return (
-    <div className="max-w-[100vw] overflow-hidden mt-32 lg:mt-64" id="services">
-      <div className="service-banner w-screen h-full overflow-visible">
-        <p className="-translate-x-[380px] w-[150%] text-3xl md:text-7xl font-black whitespace-nowrap py-2 md:py-5">
-          SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES
-          SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES
-        </p>
-      </div>
-      <div className="flip-banner">
-        <p className="-translate-x-[380px] w-[150%] text-3xl md:text-7xl font-black whitespace-nowrap py-2 md:py-5">
-          SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES
-          SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES
-        </p>
+    <div className="max-w-[100vw] mt-32 lg:mt-64" id="services">
+      <div className="overflow-hidden max-w-screen">
+        <div className="service-banner w-screen h-full">
+          <p className="-translate-x-[380px] w-[150%] text-3xl md:text-7xl font-black whitespace-nowrap py-2 md:py-5">
+            SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES
+            SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES
+          </p>
+        </div>
+        <div className="flip-banner">
+          <p className="-translate-x-[380px] w-[150%] text-3xl md:text-7xl font-black whitespace-nowrap py-2 md:py-5">
+            SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES
+            SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES
+          </p>
+        </div>
       </div>
       <div className="md:flex w-full mt-8 lg:mt-28 p-4 md:p-16 lg:p-24">
-        <div className="enter-left w-full flex justify-center md:justify-end">
-          <div className="max-w-[325px] lg:max-w-[500px] w-[325px] lg:w-[500px] flex justify-center md:mr-4 lg:mr-8">
-            <div className="relative w-[500px] h-[384px] flex justify-center">
-              <WebDev />
-            </div>
+        <div className="enter-left flex justify-center md:mr-4 lg:mr-8 w-full h-[300px]">
+          <div className="absolute left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%] max-w-[280px] lg:max-w-[500px] w-[240px] lg:w-[500px]">
+            <WebDev />
           </div>
         </div>
-        <div className="enter-right md:px-6 w-full md:mt-16 lg:mt-10">
-          <p className="cormorant text-5xl lg:text-7xl text-center md:text-start">
+        <div className="enter-right px-4 md:px-6 w-full mt-8 md:mt-16 lg:mt-10">
+          <p className="w-full cormorant text-5xl lg:text-7xl text-center md:text-start">
             WEBSITES
           </p>
           <div className="w-full flex justify-center lg:block lg:justify-start">
@@ -47,7 +47,7 @@ const Services = () => {
             <GuidanceGraphic />
           </div>
           <div className="absolute">
-            <div className="relative w-[300px] h-[420px] md:w-[500px] lg:w-[700px] md:h-[550px] lg:h-[800px] enter-round">
+            <div className="relative w-[300px] h-[300px] md:w-[500px] lg:w-[700px] md:h-[550px] lg:h-[800px] enter-round">
               <Guidance />
             </div>
           </div>

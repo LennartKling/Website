@@ -24,11 +24,14 @@ const About = () => {
   };
 
   return (
-    <div className="flex justify-center mt-32 lg:mt-64 w-full" id="about">
+    <div
+      className="flex justify-center mt-32 lg:mt-64 max-w-full overflow-hidden"
+      id="about"
+    >
       <div className="max-w-[800px]">
         <div className="flex w-full justify-center">
           <div className="absolute -z-50">
-            <div className="relative w-[500px] h-[500px]">
+            <div className="relative w-[300px] h-[300px] md:w-[500px] md:h-[500px]">
               <Globe />
             </div>
           </div>

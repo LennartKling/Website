@@ -31,12 +31,12 @@ const NavbarMobile = () => {
     }
   };
   return (
-    <nav className="lg:hidden">
+    <div className="lg:hidden">
       <div className="fixed z-50 px-6 md:px-10 w-full h-[100px] flex justify-center items-center">
         <div>
           <Logo />
         </div>
-        <div className="w-full flex justify-center">
+        <div className="w-full h-full flex justify-center">
           <div
             className="fixed w-[100px] md:w-[200px] h-[6px] bg-black rounded-full ease-in duration-500 top-[50px]"
             ref={(node) => {
@@ -131,7 +131,7 @@ const NavbarMobile = () => {
           </div>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 
