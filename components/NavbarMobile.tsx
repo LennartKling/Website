@@ -18,9 +18,10 @@ const NavbarMobile = () => {
   const checkSwipe = (node: any) => {
     setMenuOpen(node.classList.contains("menu-active"));
     console.log(swipe, y);
-    if (swipe < 1000 && menuOpen) {
+    /*if (swipe < 1000 && menuOpen) {
       node.classList.remove("menu-active");
-    } else if (swipe > 0 && !menuOpen && y < 200) {
+    } else */
+    if (swipe > 0 && !menuOpen && y < 200) {
       node.classList.add("menu-active");
     }
   };
