@@ -12,7 +12,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Leam</title>
-        <link rel="icon" href="/assets/favicon.ico" />
+        <link rel="icon" href="/images/favicon.ico" />
       </Head>
       <Navbar />
       <NavbarMobile />

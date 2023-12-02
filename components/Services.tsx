@@ -8,7 +8,7 @@ import GuidanceGraphic from "./images/services/GuidanceGraphic";
 
 const Services = () => {
   return (
-    <div className="max-w-[100vw] mt-32 lg:mt-64" id="services">
+    <div className="max-w-[100vw] overflow-hidden mt-32 lg:mt-64" id="services">
       <div className="service-banner w-screen h-full overflow-visible">
         <p className="-translate-x-[380px] w-[150%] text-3xl md:text-7xl font-black whitespace-nowrap py-2 md:py-5">
           SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES SERVICES
