@@ -2,12 +2,184 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply bg-[#0B0B0B] text-[#fff] pt-0 m-0;
-  }
+body {
+  background-image: url("/images/background.jpg");
+  user-select: none;
+  overflow-x: hidden;
+}
 
-  button, li {
-    @apply cursor-pointer
+@keyframes scroll-blur {
+  0% {
+    opacity: 0.7;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  } 15% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  } 85% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  } 100% {
+    opacity: 0.7;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
   }
+}
+
+.blur-opac {
+  animation: scroll-blur linear both;
+  animation-timeline: view();
+  animation-range: entry 0% exit 100%;
+}
+
+@keyframes scroll-work {
+  0% {
+    opacity: 0.7;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  } 5% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  } 65% {
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  } 100% {
+    opacity: 0.7;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  }
+}
+
+.blur-work {
+  animation: scroll-work linear both;
+  animation-timeline: view();
+  animation-range: entry 0% exit 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin 12s infinite linear;
+}
+
+@keyframes banner {
+  from {
+    transform: scaleY(2) translateX(0px);
+  } to {
+    transform: scaleY(2) translateX(380px);
+  }
+}
+
+.service-banner {
+  animation: banner linear both;
+  animation-timeline: view();
+  animation-range: cover exit;
+}
+
+@keyframes flip-banner {
+  from {
+    transform: scaleY(1.8) rotateY(180deg) translateX(-380px);
+  } to {
+    transform: scaleY(1.8) rotateY(180deg) translateX(0px);
+  }
+}
+
+.flip-banner {
+  animation: flip-banner linear both;
+  animation-timeline: view();
+  animation-range: cover exit;
+}
+
+
+.nav-hover:hover > .smile {
+  opacity: 100;
+  transform: translateY(-10px);
+}
+
+@keyframes left-animation {
+  0% {
+    transform: translateX(-100%);
+  } 35% {
+    transform: translateX(0);
+  }
+}
+
+.enter-left {
+  animation: left-animation linear both;
+  animation-timeline: view();
+  animation-range: cover exit;
+}
+
+@keyframes right-animation {
+  0% {
+    transform: translateX(100%);
+  } 35% {
+    transform: translateX(0);
+  }
+}
+
+.enter-right {
+  animation: right-animation linear both;
+  animation-timeline: view();
+  animation-range: cover exit;
+}
+
+@keyframes bottom-animation {
+  0% {
+    transform: translateY(200%);
+  } 40% {
+    transform: translateY(0);
+  }
+}
+
+.enter-bottom {
+  animation: bottom-animation linear both;
+  animation-timeline: scroll(root);
+  animation-range: entry exit;
+}
+
+@keyframes round-animation {
+  0% {
+    transform: rotate(-90deg);
+  } 30% {
+    transform: rotate(0);
+  }
+}
+
+.enter-round {
+  animation: round-animation linear both;
+  animation-timeline: view();
+  animation-range: entry exit;
+}
+
+@keyframes zoom-animation {
+  0% {
+    transform: scale(0.5);
+  } 40% {
+    transform: scale(1);
+  }
+}
+
+.enter-zoom {
+  animation: zoom-animation linear both;
+  animation-timeline: view();
+  animation-range: entry exit;
+}
+
+.menu-active {
+  transform: translateY(0);
+}
+
+.menu-open {
+  top: calc(100vh - 50px);
 }
