@@ -22,7 +22,7 @@ const SwipeMotion = () => {
   };
 
   useEffect(() => {
-    document.addEventListener("touchstart", updateTouchStart);
+    document.addEventListener("mousedo", updateTouchStart);
     document.addEventListener("touchmove", updateTouchMove);
     return () => {
       document.removeEventListener("touchstart", updateTouchStart);

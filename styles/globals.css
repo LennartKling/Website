@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Indie+Flower&family=Playfair+Display&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,18 @@ body {
   background-image: url("/images/background.jpg");
   user-select: none;
   overflow-x: hidden;
+}
+
+.cormorant {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.indie {
+  font-family: 'Indie Flower', cursive;
 }
 
 @keyframes scroll-blur {
