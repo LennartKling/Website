@@ -2,16 +2,55 @@
 
 import React from "react";
 import Together from "./images/contact/Together";
+import { useEffect } from "react";
+import ScrollPosition from "../pages/api/ScrollPosition";
+
+const map = (
+  in_start: number,
+  in_end: number,
+  out_start: number,
+  out_end: number,
+  input: number
+) => {
+  let slope = (out_end - out_start) / (in_end - in_start);
+  return out_start + slope * (input - in_start);
+};
 
 const Contact = () => {
+  const scroll = ScrollPosition().y;
+
   const scrollTo = (section: string) => {
     document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+  };
+  const animZoom = (node: any, height: number) => {
+    let top = node.getBoundingClientRect().top;
+    let bottom = node.getBoundingClientRect().bottom;
+    let in_range_start = top - bottom + height * 0.7;
+    let in_range_end = height;
+    let out_range_start = 1;
+    let out_range_end = 0.4;
+    let anim = map(
+      in_range_start,
+      in_range_end,
+      out_range_start,
+      out_range_end,
+      top
+    );
+    if (anim < out_range_end) anim = out_range_end;
+    if (anim > out_range_start) anim = out_range_start;
+    node.children[0].style.transform = `scale(${anim})`;
   };
   return (
     <div>
       <div className="md:flex mt-32 lg:mt-64 w-[100vw]" id="contact">
-        <div className="flex justify-center items-center py-12 md:py-0 w-full md:w-[50vw] bg-black">
-          <div className="text-white max-w-[500px] enter-zoom">
+        <div
+          ref={(node) => {
+            if (!node) return;
+            animZoom(node, window.innerHeight);
+          }}
+          className="flex justify-center items-center py-12 md:py-0 w-full md:w-[50vw] bg-black"
+        >
+          <div className="text-white max-w-[500px]">
             <p className="w-full text-center text-4xl md:text-6xl lg:text-7xl font-bold">
               LET&apos;S WORK TOGETHER
             </p>
@@ -25,8 +64,14 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center w-full md:w-[50vw] bg-white">
-          <div className="relative enter-zoom">
+        <div
+          ref={(node) => {
+            if (!node) return;
+            animZoom(node, window.innerHeight);
+          }}
+          className="flex justify-center items-center w-full md:w-[50vw] bg-white"
+        >
+          <div className="relative">
             <Together />
           </div>
         </div>

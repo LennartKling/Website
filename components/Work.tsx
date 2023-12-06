@@ -6,9 +6,22 @@ import Friseur from "./images/work/Friseur";
 import Bluepaca from "./images/work/Bluepaca";
 import Leam from "./images/work/Leam";
 import Cursor from "../components/Cursor";
+import ScrollPosition from "../pages/api/ScrollPosition";
+
+const map = (
+  in_start: number,
+  in_end: number,
+  out_start: number,
+  out_end: number,
+  input: number
+) => {
+  let slope = (out_end - out_start) / (in_end - in_start);
+  return out_start + slope * (input - in_start);
+};
 
 const Work = () => {
   const { mouseX, mouseY, maxW }: any = MouseMotion();
+  const scroll = ScrollPosition().y;
 
   const animate = (node: any) => {
     if (maxW < 1080) return;
@@ -34,6 +47,25 @@ const Work = () => {
     );
   };
 
+  const blur = (node: any, height: number) => {
+    let top = node.getBoundingClientRect().top;
+    let bottom = node.getBoundingClientRect().bottom;
+    let in_range_start = top - bottom + height;
+    let in_range_end = height;
+    let out_range_start = 0;
+    let out_range_end = 8;
+    let anim = map(
+      in_range_start,
+      in_range_end,
+      out_range_start,
+      out_range_end,
+      top
+    );
+    if (anim > out_range_end) anim = out_range_end;
+    if (anim < out_range_start) anim = out_range_start;
+    node.style.filter = `blur(${anim}px)`;
+  };
+
   return (
     <div className="mt-32 lg:mt-64" id="work">
       <div className="font-black mb-12 text-6xl md:text-8xl pointer-events-none flex w-full justify-center">
@@ -42,7 +74,10 @@ const Work = () => {
           <p
             className="text-mid drop-shadow-2xl -translate-y-[60px] md:-translate-y-24 translate-x-1 text-[#1FD2FF] blur-work"
             ref={(node) => {
-              if (node) animate(node);
+              if (node) {
+                animate(node);
+                blur(node, window.innerHeight);
+              }
             }}
           >
             WORK
@@ -50,7 +85,10 @@ const Work = () => {
           <p
             className=" -translate-y-[120px] md:-translate-y-48 translate-x-2 text-[#5A70E0] blur-work"
             ref={(node) => {
-              if (node) animate(node);
+              if (node) {
+                animate(node);
+                blur(node, window.innerHeight);
+              }
             }}
           >
             WORK
@@ -67,7 +105,12 @@ const Work = () => {
               className="cursor-none shadow-2xl"
             >
               <div className="hover:brightness-50 ease-in duration-300">
-                <div className="blur-opac relative w-[250px] md:w-[300px] h-[167px] md:h-[200px]">
+                <div
+                  ref={(node) => {
+                    if (node) blur(node, window.innerHeight);
+                  }}
+                  className="relative w-[250px] md:w-[300px] h-[167px] md:h-[200px]"
+                >
                   <Friseur />
                 </div>
               </div>
@@ -92,7 +135,12 @@ const Work = () => {
               className="cursor-none shadow-2xl"
             >
               <div className="hover:brightness-50 ease-in duration-300">
-                <div className="blur-opac relative w-[250px] md:w-[300px] h-[167px] md:h-[200px]">
+                <div
+                  ref={(node) => {
+                    if (node) blur(node, window.innerHeight);
+                  }}
+                  className="relative w-[250px] md:w-[300px] h-[167px] md:h-[200px]"
+                >
                   <Leam />
                 </div>
               </div>
@@ -117,7 +165,12 @@ const Work = () => {
               className="cursor-none shadow-2xl"
             >
               <div className="hover:brightness-50 ease-in duration-300">
-                <div className="blur-opac relative w-[250px] md:w-[300px] h-[167px] md:h-[200px]">
+                <div
+                  ref={(node) => {
+                    if (node) blur(node, window.innerHeight);
+                  }}
+                  className="relative w-[250px] md:w-[300px] h-[167px] md:h-[200px]"
+                >
                   <Bluepaca />
                 </div>
               </div>
