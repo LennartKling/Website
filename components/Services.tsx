@@ -29,8 +29,8 @@ const Services = () => {
             <WebDev />
           </div>
         </div>
-        <div className="px-4 md:px-6 w-full mt-8 md:mt-16 lg:mt-10">
-          <p className="w-full cormorant text-5xl lg:text-7xl text-center md:text-start">
+        <div className="enter-right px-4 md:px-6 w-full mt-8 md:mt-16 lg:mt-10">
+          <p className="w-full cormorant text-4xl lg:text-7xl text-center md:text-start">
             WEBSITES
           </p>
           <div className="w-full flex justify-center lg:block lg:justify-start">
@@ -59,11 +59,11 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className="enter-zoom mt-10">
-        <div className="lg:flex w-full pb-0 p-6 md:pb-0 md:p-16 lg:pb-0 lg:p-24 overflow-hidden">
+      <div className="enter-zoom mt-10 px-4">
+        <div className="lg:flex w-full pb-0 p-6 md:pb-0 md:p-16 lg:pb-0 lg:p-24">
           <div className="w-full flex justify-center lg:justify-end mt-4">
             <div className="lg:pl-6 max-w-[500px]">
-              <p className="cormorant text-5xl lg:text-7xl text-center md:text-start">
+              <p className="cormorant text-4xl lg:text-7xl text-center md:text-start">
                 GRAPHIC DESIGN
               </p>
               <p className="cormorant mt-4 text-2xl lg:text-3xl max-w-[500px] text-center md:text-start">

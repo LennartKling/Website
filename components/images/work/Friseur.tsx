@@ -5,7 +5,7 @@ const Friseur = () => {
     <img
       src="/images/work/work-2.JPG"
       alt="Friseur Eva Kameter"
-      width="500"
+      width="100%"
       height="315"
       style={{ objectFit: "cover" }}
     />

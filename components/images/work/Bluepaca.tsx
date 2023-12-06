@@ -5,7 +5,7 @@ const Bluepaca = () => {
     <img
       src="/images/work/work-3.JPG"
       alt="Bluepaca"
-      width="500"
+      width="100%"
       height="315"
       style={{ objectFit: "cover" }}
     />

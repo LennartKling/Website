@@ -7,12 +7,12 @@ const SwipeMotion = () => {
   const [swipe, setSwipe] = useState(0);
 
   const updateTouchStart = (e: any) => {
-    down = e.clientY;
+    down = e.touches[0].clientY;
   };
 
   const updateTouchMove = (e: any) => {
     if (!down) return;
-    let up = e.clientY;
+    let up = e.touches[0].clientY;
     updateSwipe(up - down);
     down = null;
   };

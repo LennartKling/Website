@@ -148,10 +148,12 @@ body {
   }
 }
 
-.enter-right {
-  animation: right-animation linear both;
-  animation-timeline: view();
-  animation-range: cover exit;
+@media (min-width: 1024px) {
+  .enter-right {
+    animation: right-animation linear both;
+    animation-timeline: view();
+    animation-range: cover exit;
+  }
 }
 
 @keyframes bottom-animation {

@@ -4,6 +4,9 @@ import React from "react";
 import Together from "./images/contact/Together";
 
 const Contact = () => {
+  const scrollTo = (section: string) => {
+    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
       <div className="md:flex mt-32 lg:mt-64 w-[100vw]" id="contact">
@@ -32,17 +35,29 @@ const Contact = () => {
         <div className="flex justify-start items-center w-full bg-black pl-4 py-8 md:pl-10 md:pb-10">
           <div className="text-white font-black text-2xl md:text-4xl">
             <div className="cursor-pointer group">
-              <a className="group-hover:text-[#1FD0FD] duration-200 ease-in">
+              <a
+                className="group-hover:text-[#1FD0FD] duration-200 ease-in"
+                onClick={() => scrollTo("work")}
+                onKeyDown={() => scrollTo("work")}
+              >
                 work
               </a>
             </div>
             <div className="cursor-pointer group">
-              <a className="group-hover:text-[#1FD0FD] duration-200 ease-in">
+              <a
+                className="group-hover:text-[#1FD0FD] duration-200 ease-in"
+                onClick={() => scrollTo("services")}
+                onKeyDown={() => scrollTo("services")}
+              >
                 services
               </a>
             </div>
             <div className="cursor-pointer group">
-              <a className="group-hover:text-[#1FD0FD] duration-200 ease-in">
+              <a
+                className="group-hover:text-[#1FD0FD] duration-200 ease-in"
+                onClick={() => scrollTo("about")}
+                onKeyDown={() => scrollTo("about")}
+              >
                 about
               </a>
             </div>

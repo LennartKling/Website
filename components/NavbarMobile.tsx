@@ -8,43 +8,42 @@ import TouchMotion from "../pages/api/TouchMotion";
 import ScrollPosition from "../pages/api/ScrollPosition";
 import { useState } from "react";
 
+var menuOpen = false;
+
 const NavbarMobile = () => {
-  let scrollUpdater = ScrollPosition();
   let y: number = TouchMotion().touchY;
   let swipe: number = SwipeMotion();
 
-  const [menuOpen, setMenuOpen] = useState(false);
-
   const checkSwipe = (node: any) => {
-    setMenuOpen(node.classList.contains("menu-active"));
-    console.log(swipe, y);
-    /*if (swipe < 1000 && menuOpen) {
-      node.classList.remove("menu-active");
-    } else */
-    if (swipe > 0 && !menuOpen && y < 400) {
+    menuOpen = node.classList.contains("menu-active");
+    if (swipe > 0 && !menuOpen && y < 100) {
       node.classList.add("menu-active");
+      document.getElementById("menu-bar")?.classList.add("menu-open");
     }
   };
-  const checkMenu = (node: any) => {
-    if (menuOpen) {
-      node.classList.add("menu-open");
-    } else {
-      node.classList.remove("menu-open");
-    }
+  const menuClicked = (section: string) => {
+    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
+    document
+      .getElementsByClassName("menu-active")[0]
+      ?.classList.remove("menu-active");
+    document.getElementById("menu-bar")?.classList.remove("menu-open");
+  };
+  const openMenu = () => {
+    document.getElementById("mobile-menu")?.classList.add("menu-active");
+    document.getElementById("menu-bar")?.classList.add("menu-open");
   };
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden overflow-hidden">
       <div className="fixed z-50 px-6 md:px-10 w-full h-[100px] flex justify-center items-center">
         <div>
           <Logo />
         </div>
         <div className="w-full h-full flex justify-center">
           <div
+            id="menu-bar"
             className="fixed w-[100px] md:w-[200px] h-[6px] bg-black rounded-full ease-in duration-500 top-[50px]"
-            ref={(node) => {
-              if (!node) return;
-              checkMenu(node);
-            }}
+            onClick={() => openMenu()}
+            onKeyDown={() => openMenu()}
           ></div>
         </div>
         <div>
@@ -52,74 +51,53 @@ const NavbarMobile = () => {
         </div>
       </div>
       <div
-        className="-translate-y-[100%] flex flex-col justify-center top-0 left-0 fixed w-screen backdrop-blur-md h-screen bg-white/80 z-40 ease-in duration-500"
+        id="mobile-menu"
+        className="-translate-y-[100%] flex flex-col justify-center top-0 left-0 fixed w-screen backdrop-blur-md h-[100vh] bg-white/80 z-40 ease-in duration-500 mb-0"
         ref={(node) => {
           if (!node) return;
           checkSwipe(node);
         }}
       >
         <div className="h-[60%] flex flex-col">
-          <button
+          <div
             className="flex items-center w-[70%] mx-auto h-full"
-            onClick={() => {
-              document
-                .getElementById("work")
-                ?.scrollIntoView({ behavior: "smooth" });
-              document
-                .getElementsByClassName("menu-active")[0]
-                ?.classList.remove("menu-active");
-            }}
+            onClick={() => menuClicked("work")}
+            onKeyDown={() => menuClicked("work")}
           >
             <div className="invert">
               <Smile />
             </div>
-            <button className="font-black ml-4 text-4xl text-black">
-              work
-            </button>
-          </button>
-          <button
+            <p className="font-black ml-4 text-4xl text-black">work</p>
+          </div>
+          <div
             className="flex items-center w-[70%] mx-auto h-full"
-            onClick={() => {
-              document
-                .getElementById("work")
-                ?.scrollIntoView({ behavior: "smooth" });
-              document
-                .getElementsByClassName("menu-active")[0]
-                ?.classList.remove("menu-active");
-            }}
+            onClick={() => menuClicked("services")}
+            onKeyDown={() => menuClicked("services")}
           >
             <div className="invert">
               <Smile />
             </div>
-            <button className="font-black ml-4 text-4xl text-black">
-              services
-            </button>
-          </button>
-          <button
+            <p className="font-black ml-4 text-4xl text-black">services</p>
+          </div>
+          <div
             className="flex items-center w-[70%] mx-auto h-full"
-            onClick={() => {
-              document
-                .getElementById("services")
-                ?.scrollIntoView({ behavior: "smooth" });
-              document
-                .getElementsByClassName("menu-active")[0]
-                ?.classList.remove("menu-active");
-            }}
+            onClick={() => menuClicked("about")}
+            onKeyDown={() => menuClicked("about")}
           >
             <div className="invert">
               <Smile />
             </div>
-            <button className="font-black ml-4 text-4xl text-black">
-              about
-            </button>
-          </button>
-          <div className="flex items-center w-[70%] mx-auto h-full">
+            <p className="font-black ml-4 text-4xl text-black">about</p>
+          </div>
+          <div
+            className="flex items-center w-[70%] mx-auto h-full"
+            onClick={() => menuClicked("contact")}
+            onKeyDown={() => menuClicked("contact")}
+          >
             <div className="invert">
               <Smile />
             </div>
-            <button className="font-black ml-4 text-4xl text-black">
-              contact
-            </button>
+            <p className="font-black ml-4 text-4xl text-black">contact</p>
           </div>
         </div>
       </div>

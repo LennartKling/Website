@@ -36,11 +36,11 @@ const Work = () => {
 
   return (
     <div className="mt-32 lg:mt-64" id="work">
-      <div className="font-black mb-12 text-7xl md:text-8xl pointer-events-none flex w-full justify-center">
+      <div className="font-black mb-12 text-6xl md:text-8xl pointer-events-none flex w-full justify-center">
         <div>
           <p className="drop-shadow-2xl blur-opac">WORK</p>
           <p
-            className="text-mid drop-shadow-2xl -translate-y-[72px] md:-translate-y-24 translate-x-1 text-[#1FD2FF] blur-work"
+            className="text-mid drop-shadow-2xl -translate-y-[60px] md:-translate-y-24 translate-x-1 text-[#1FD2FF] blur-work"
             ref={(node) => {
               if (node) animate(node);
             }}
@@ -48,7 +48,7 @@ const Work = () => {
             WORK
           </p>
           <p
-            className=" -translate-y-[144px] md:-translate-y-48 translate-x-2 text-[#5A70E0] blur-work"
+            className=" -translate-y-[120px] md:-translate-y-48 translate-x-2 text-[#5A70E0] blur-work"
             ref={(node) => {
               if (node) animate(node);
             }}
@@ -76,7 +76,7 @@ const Work = () => {
                   EVA KAMETER
                 </p>
               </div>
-              <div className="fixed w-screen h-screen top-0 left-0 object-cover -z-50 opacity-0 group-hover:opacity-20 pointer-events-none blur-md ease-in duration-300">
+              <div className="fixed w-[100vw] h-[100vh] top-0 left-0 object-cover -z-50 opacity-0 group-hover:opacity-20 pointer-events-none blur-md ease-in duration-300">
                 <Friseur />
               </div>
               <div className="opacity-0 group-hover:opacity-100 fixed w-screen h-screen left-0 top-0 z-50 pointer-events-none">
