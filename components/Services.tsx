@@ -87,6 +87,7 @@ const Services = () => {
     );
     if (anim < out_range_end) anim = out_range_end;
     if (anim > out_range_start) anim = out_range_start;
+    console.log(in_range_start, anim);
     node.children[0].style.transform = `scale(${anim})`;
   };
 
@@ -106,7 +107,7 @@ const Services = () => {
   };
 
   return (
-    <div className="max-w-[100vw] mt-32 lg:mt-64" id="services">
+    <div className="max-w-[100vw] mt-32 lg:mt-64 overflow-hidden" id="services">
       <div className="overflow-hidden max-w-screen">
         <div className="w-screen h-full">
           <p

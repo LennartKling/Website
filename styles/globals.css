@@ -43,7 +43,3 @@ body {
 .menu-active {
   transform: translateY(0);
 }
-
-.menu-open {
-  top: calc(100vh - 50px);
-}

@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import Logo from "../components/images/Logo";
-import Copyright from "./images/navbar/Copyright";
 import Smile from "./images/navbar/Smile";
 import SwipeMotion from "../pages/api/SwipeMotion";
 import TouchMotion from "../pages/api/TouchMotion";
 import ScrollPosition from "../pages/api/ScrollPosition";
 import { useState } from "react";
+import Menu from "./images/navbar/Menu";
 
 var menuOpen = false;
 
@@ -17,8 +17,7 @@ const NavbarMobile = () => {
   const checkSwipe = (node: any) => {
     menuOpen = node.classList.contains("menu-active");
     if (swipe > 0 && !menuOpen && y < 100) {
-      node.classList.add("menu-active");
-      document.getElementById("menu-bar")?.classList.add("menu-open");
+      //node.classList.add("menu-active");
     }
   };
   const menuClicked = (section: string) => {
@@ -26,11 +25,16 @@ const NavbarMobile = () => {
     document
       .getElementsByClassName("menu-active")[0]
       ?.classList.remove("menu-active");
-    document.getElementById("menu-bar")?.classList.remove("menu-open");
   };
   const openMenu = () => {
-    document.getElementById("mobile-menu")?.classList.add("menu-active");
-    document.getElementById("menu-bar")?.classList.add("menu-open");
+    let isOpen = document
+      .getElementById("mobile-menu")
+      ?.classList.contains("menu-active");
+    if (isOpen) {
+      document.getElementById("mobile-menu")?.classList.remove("menu-active");
+    } else {
+      document.getElementById("mobile-menu")?.classList.add("menu-active");
+    }
   };
   return (
     <div className="lg:hidden overflow-hidden">
@@ -40,14 +44,12 @@ const NavbarMobile = () => {
         </div>
         <div className="w-full h-full flex justify-center">
           <div
-            id="menu-bar"
-            className="fixed w-[100px] md:w-[200px] h-[6px] bg-black rounded-full ease-in duration-500 top-[50px]"
+            className="flex w-full items-center justify-end"
             onClick={() => openMenu()}
             onKeyDown={() => openMenu()}
-          ></div>
-        </div>
-        <div>
-          <Copyright />
+          >
+            <Menu />
+          </div>
         </div>
       </div>
       <div

@@ -67,7 +67,7 @@ const Work = () => {
   };
 
   return (
-    <div className="mt-32 lg:mt-64" id="work">
+    <div className="mt-32 lg:mt-64 overflow-hidden" id="work">
       <div className="font-black mb-12 text-6xl md:text-8xl pointer-events-none flex w-full justify-center">
         <div>
           <p className="drop-shadow-2xl blur-opac">WORK</p>

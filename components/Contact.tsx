@@ -42,7 +42,10 @@ const Contact = () => {
   };
   return (
     <div>
-      <div className="md:flex mt-32 lg:mt-64 w-[100vw]" id="contact">
+      <div
+        className="md:flex mt-32 lg:mt-64 w-[100vw] overflow-hidden"
+        id="contact"
+      >
         <div
           ref={(node) => {
             if (!node) return;

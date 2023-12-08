@@ -25,7 +25,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative max-w-[1000px] mx-auto pt-20 px-4">
+    <div className="relative max-w-[1000px] mx-auto pt-20 px-4  overflow-hidden">
       <div
         className="absolute left-0 top-28 w-[150px] h-[150px] md:w-[200px] md:h-[200px]"
         ref={(node) => {
