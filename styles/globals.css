@@ -43,3 +43,8 @@ body {
 .menu-active {
   transform: translateY(0);
 }
+
+.nav-hover:hover > .smile {
+  opacity: 1;
+  transform: translateY(0);
+}

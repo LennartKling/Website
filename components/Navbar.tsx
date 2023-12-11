@@ -36,7 +36,7 @@ const Navbar = () => {
             >
               work
             </button>
-            <div className="smile mt-2 absolute flex justify-center w-full pointer-events-none opacity-0 ease-in duration-300 translate-y-4">
+            <div className="smile mt-2 absolute flex justify-center w-full pointer-events-none opacity-0 ease-in duration-300 translate-y-8">
               <Smile />
             </div>
           </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
             >
               services
             </button>
-            <div className="smile mt-2 absolute flex justify-center w-full pointer-events-none opacity-0 ease-in duration-300 translate-y-4">
+            <div className="smile mt-2 absolute flex justify-center w-full pointer-events-none opacity-0 ease-in duration-300 translate-y-8">
               <Smile />
             </div>
           </div>
@@ -66,7 +66,7 @@ const Navbar = () => {
             >
               about
             </button>
-            <div className="smile mt-2 absolute flex justify-center w-full pointer-events-none opacity-0 ease-in duration-300 translate-y-4">
+            <div className="smile mt-2 absolute flex justify-center w-full pointer-events-none opacity-0 ease-in duration-300 translate-y-8">
               <Smile />
             </div>
           </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
             >
               contact
             </button>
-            <div className="smile mt-2 absolute flex justify-center w-full pointer-events-none opacity-0 ease-in duration-300 translate-y-4">
+            <div className="smile mt-2 absolute flex justify-center w-full pointer-events-none opacity-0 ease-in duration-300 translate-y-8">
               <Smile />
             </div>
           </div>

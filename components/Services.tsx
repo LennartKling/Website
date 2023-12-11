@@ -74,10 +74,10 @@ const Services = () => {
   const animZoom = (node: any, height: number) => {
     let top = node.getBoundingClientRect().top;
     let bottom = node.getBoundingClientRect().bottom;
-    let in_range_start = top - bottom + height * 0.7;
-    let in_range_end = height;
+    let in_range_start = top - bottom;
+    let in_range_end = height * 1.5;
     let out_range_start = 1;
-    let out_range_end = 0.4;
+    let out_range_end = 0.5;
     let anim = map(
       in_range_start,
       in_range_end,
