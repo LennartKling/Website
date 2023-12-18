@@ -134,7 +134,7 @@ const Services = () => {
           </p>
         </div>
       </div>
-      <div className="md:flex w-full mt-8 lg:mt-28 p-4 md:p-16 lg:p-24">
+      <div className="md:flex w-full mt-8 lg:mt-28 p-4 md:p-16 lg:p-24 overflow-hidden">
         <div
           ref={(node) => {
             if (!node) return;
@@ -165,12 +165,12 @@ const Services = () => {
         </div>
       </div>
       <div className="w-full p-6 mt-20 md:p-16 lg:p-24">
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center overflow-hidden">
           <div className="relative w-[250px] h-[200px] md:w-[300px] md:h-[240px] lg:w-[400px] lg:h-[300px] mt-20 md:mt-32 lg:mt-52">
             <GuidanceGraphic />
           </div>
           <div
-            className="absolute"
+            className="absolute overflow-hidden"
             ref={(node) => {
               if (!node) return;
               animRound(node, window.innerHeight);

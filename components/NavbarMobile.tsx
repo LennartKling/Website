@@ -37,8 +37,8 @@ const NavbarMobile = () => {
     }
   };
   return (
-    <div className="lg:hidden overflow-hidden">
-      <div className="fixed z-50 px-6 md:px-10 w-full h-[100px] flex justify-center items-center">
+    <div className="xl:hidden overflow-hidden">
+      <div className="fixed z-50 px-6 md:px-10 w-full h-[100px] flex justify-center items-center overflow-hidden">
         <div>
           <Logo />
         </div>
@@ -54,7 +54,7 @@ const NavbarMobile = () => {
       </div>
       <div
         id="mobile-menu"
-        className="-translate-y-[100%] flex flex-col justify-center top-0 left-0 fixed w-screen backdrop-blur-md h-[100vh] bg-white/80 z-40 ease-in duration-500 mb-0"
+        className="-translate-y-[100%] flex flex-col justify-center top-0 left-0 fixed w-screen backdrop-blur-md h-[100vh] bg-white/80 z-40 duration-500 mb-0"
         ref={(node) => {
           if (!node) return;
           checkSwipe(node);
