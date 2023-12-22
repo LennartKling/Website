@@ -63,8 +63,16 @@ const NavbarMobile = () => {
         <div className="h-[60%] flex flex-col">
           <div
             className="flex items-center w-[70%] mx-auto h-full"
-            onClick={() => menuClicked("work")}
-            onKeyDown={() => menuClicked("work")}
+            onClick={() => {
+              if (document.location.pathname != "/")
+                window.location.href = "/#work";
+              menuClicked("work");
+            }}
+            onKeyDown={() => {
+              if (document.location.pathname != "/")
+                window.location.href = "/#work";
+              menuClicked("work");
+            }}
           >
             <div className="invert">
               <Smile />
@@ -73,8 +81,16 @@ const NavbarMobile = () => {
           </div>
           <div
             className="flex items-center w-[70%] mx-auto h-full"
-            onClick={() => menuClicked("services")}
-            onKeyDown={() => menuClicked("services")}
+            onClick={() => {
+              if (document.location.pathname != "/")
+                window.location.href = "/#services";
+              menuClicked("services");
+            }}
+            onKeyDown={() => {
+              if (document.location.pathname != "/")
+                window.location.href = "/#services";
+              menuClicked("services");
+            }}
           >
             <div className="invert">
               <Smile />
@@ -83,8 +99,16 @@ const NavbarMobile = () => {
           </div>
           <div
             className="flex items-center w-[70%] mx-auto h-full"
-            onClick={() => menuClicked("about")}
-            onKeyDown={() => menuClicked("about")}
+            onClick={() => {
+              if (document.location.pathname != "/")
+                window.location.href = "/#about";
+              menuClicked("about");
+            }}
+            onKeyDown={() => {
+              if (document.location.pathname != "/")
+                window.location.href = "/#about";
+              menuClicked("about");
+            }}
           >
             <div className="invert">
               <Smile />
@@ -93,8 +117,16 @@ const NavbarMobile = () => {
           </div>
           <div
             className="flex items-center w-[70%] mx-auto h-full"
-            onClick={() => menuClicked("contact")}
-            onKeyDown={() => menuClicked("contact")}
+            onClick={() => {
+              if (document.location.pathname != "/")
+                window.location.href = "/#contact";
+              menuClicked("contact");
+            }}
+            onKeyDown={() => {
+              if (document.location.pathname != "/")
+                window.location.href = "/#contact";
+              menuClicked("contact");
+            }}
           >
             <div className="invert">
               <Smile />

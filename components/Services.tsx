@@ -87,7 +87,6 @@ const Services = () => {
     );
     if (anim < out_range_end) anim = out_range_end;
     if (anim > out_range_start) anim = out_range_start;
-    console.log(in_range_start, anim);
     node.children[0].style.transform = `scale(${anim})`;
   };
 

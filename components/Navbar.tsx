@@ -29,6 +29,8 @@ const Navbar = () => {
             <button
               className="mx-4 lg:text-4xl group-hover:text-white duration-300 ease-in"
               onClick={() => {
+                if (document.location.pathname != "/")
+                  window.location.href = "/#work";
                 document
                   .getElementById("work")
                   ?.scrollIntoView({ behavior: "smooth" });
@@ -44,6 +46,8 @@ const Navbar = () => {
             <button
               className="mx-4 lg:text-4xl group-hover:text-white duration-300 ease-in"
               onClick={() => {
+                if (document.location.pathname != "/")
+                  window.location.href = "/#services";
                 document
                   .getElementById("services")
                   ?.scrollIntoView({ behavior: "smooth" });
@@ -59,6 +63,8 @@ const Navbar = () => {
             <button
               className="mx-4 lg:text-4xl group-hover:text-white duration-300 ease-in"
               onClick={() => {
+                if (document.location.pathname != "/")
+                  window.location.href = "/#about";
                 document
                   .getElementById("about")
                   ?.scrollIntoView({ behavior: "smooth" });
@@ -74,6 +80,8 @@ const Navbar = () => {
             <button
               className="mx-4 lg:text-4xl group-hover:text-white duration-300 ease-in"
               onClick={() => {
+                if (document.location.pathname != "/")
+                  window.location.href = "/#contact";
                 document
                   .getElementById("contact")
                   ?.scrollIntoView({ behavior: "smooth" });
