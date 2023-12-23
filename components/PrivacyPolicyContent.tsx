@@ -9,63 +9,71 @@ const PrivacyPolicyContent = () => {
       <p className="text-xl sm:text-4xl">
         <strong>Datenschutzerklärung</strong>
       </p>
-      <br />
-      <br />
       <p>Stand: 22. Dezember 2023</p>
-      <p>Inhaltsübersicht</p>
+      <br />
+      <p>
+        <strong>Inhaltsübersicht</strong>
+      </p>
+      <br />
       <ul className="index">
-        <li>
-          <a className="index-link" href="#m3">
-            Verantwortlicher
-          </a>
-        </li>
-        <li>
-          <a className="index-link" href="#mOverview">
-            Übersicht der Verarbeitungen
-          </a>
-        </li>
-        <li>
-          <a className="index-link" href="#m2427">
-            Maßgebliche Rechtsgrundlagen
-          </a>
-        </li>
-        <li>
-          <a className="index-link" href="#m27">
-            Sicherheitsmaßnahmen
-          </a>
-        </li>
-        <li>
-          <a className="index-link" href="#m10">
-            Rechte der betroffenen Personen
-          </a>
-        </li>
-        <li>
-          <a className="index-link" href="#m317">
-            Geschäftliche Leistungen
-          </a>
-        </li>
-        <li>
-          <a className="index-link" href="#m182">
-            Kontakt- und Anfragenverwaltung
-          </a>
-        </li>
-        <li>
-          <a className="index-link" href="#m263">
-            Webanalyse, Monitoring und Optimierung
-          </a>
-        </li>
-        <li>
-          <a className="index-link" href="#m328">
-            Plugins und eingebettete Funktionen sowie Inhalte
-          </a>
-        </li>
-        <li>
-          <a className="index-link" href="#m15">
-            Änderung und Aktualisierung der Datenschutzerklärung
-          </a>
-        </li>
+        <strong>
+          <li>
+            <a className="index-link" href="#m3">
+              - Verantwortlicher
+            </a>
+          </li>
+          <li>
+            <a className="index-link" href="#mOverview">
+              - Übersicht der Verarbeitungen
+            </a>
+          </li>
+          <li>
+            <a className="index-link" href="#m2427">
+              - Maßgebliche Rechtsgrundlagen
+            </a>
+          </li>
+          <li>
+            <a className="index-link" href="#m27">
+              - Sicherheitsmaßnahmen
+            </a>
+          </li>
+          <li>
+            <a className="index-link" href="#m10">
+              - Rechte der betroffenen Personen
+            </a>
+          </li>
+          <li>
+            <a className="index-link" href="#m317">
+              - Geschäftliche Leistungen
+            </a>
+          </li>
+          <li>
+            <a className="index-link" href="#m182">
+              - Kontakt- und Anfragenverwaltung
+            </a>
+          </li>
+          <li>
+            <a className="index-link" href="#m263">
+              - Webanalyse, Monitoring und Optimierung
+            </a>
+          </li>
+          <li>
+            <a className="index-link" href="#m328">
+              - Plugins und eingebettete Funktionen sowie Inhalte
+            </a>
+          </li>
+          <li>
+            <a className="index-link" href="#m15">
+              - Änderung und Aktualisierung der Datenschutzerklärung
+            </a>
+          </li>
+        </strong>
       </ul>
-      <p id="m3">Verantwortlicher</p>
+      <br />
+      <p id="m3">
+        <strong>Verantwortlicher</strong>
+      </p>
+      <br />
       <p>
         Luis Kameter
         <br />
@@ -75,46 +83,62 @@ const PrivacyPolicyContent = () => {
       </p>
       E-Mail-Adresse:{" "}
       <a href="mailto:contact@luiskameter.com">contact@luiskameter.com</a>
-      <p id="mOverview">Übersicht der Verarbeitungen</p>
+      <br />
+      <br />
+      <p id="mOverview">
+        <strong>Übersicht der Verarbeitungen</strong>
+      </p>
+      <br />
       <p>
         Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und
         die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen
         Personen.
       </p>
+      <br />
       <p>Arten der verarbeiteten Daten</p>
+      <br />
       <ul>
-        <li>Bestandsdaten.</li>
-        <li>Zahlungsdaten.</li>
-        <li>Kontaktdaten.</li>
-        <li>Inhaltsdaten.</li>
-        <li>Vertragsdaten.</li>
-        <li>Nutzungsdaten.</li>
-        <li>Meta-, Kommunikations- und Verfahrensdaten.</li>
+        <li>- Bestandsdaten.</li>
+        <li>- Zahlungsdaten.</li>
+        <li>- Kontaktdaten.</li>
+        <li>- Inhaltsdaten.</li>
+        <li>- Vertragsdaten.</li>
+        <li>- Nutzungsdaten.</li>
+        <li>- Meta-, Kommunikations- und Verfahrensdaten.</li>
       </ul>
+      <br />
       <p>Kategorien betroffener Personen</p>
+      <br />
       <ul>
-        <li>Interessenten.</li>
-        <li>Kommunikationspartner.</li>
-        <li>Nutzer.</li>
-        <li>Geschäfts- und Vertragspartner.</li>
+        <li>- Interessenten.</li>
+        <li>- Kommunikationspartner.</li>
+        <li>- Nutzer.</li>
+        <li>- Geschäfts- und Vertragspartner.</li>
       </ul>
+      <br />
       <p>Zwecke der Verarbeitung</p>
+      <br />
       <ul>
         <li>
-          Erbringung vertraglicher Leistungen und Erfüllung vertraglicher
+          - Erbringung vertraglicher Leistungen und Erfüllung vertraglicher
           Pflichten.
         </li>
-        <li>Kontaktanfragen und Kommunikation.</li>
-        <li>Reichweitenmessung.</li>
-        <li>Büro- und Organisationsverfahren.</li>
-        <li>Verwaltung und Beantwortung von Anfragen.</li>
-        <li>Feedback.</li>
-        <li>Profile mit nutzerbezogenen Informationen.</li>
+        <li>- Kontaktanfragen und Kommunikation.</li>
+        <li>- Reichweitenmessung.</li>
+        <li>- Büro- und Organisationsverfahren.</li>
+        <li>- Verwaltung und Beantwortung von Anfragen.</li>
+        <li>- Feedback.</li>
+        <li>- Profile mit nutzerbezogenen Informationen.</li>
         <li>
-          Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.
+          - Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.
         </li>
       </ul>
-      <p id="m2427">Maßgebliche Rechtsgrundlagen</p>
+      <br />
+      <br />
+      <p id="m2427">
+        <strong>Maßgebliche Rechtsgrundlagen</strong>
+      </p>
+      <br />
       <p>
         <strong>Maßgebliche Rechtsgrundlagen nach der DSGVO: </strong>Im
         Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der DSGVO,
@@ -124,34 +148,38 @@ const PrivacyPolicyContent = () => {
         können. Sollten ferner im Einzelfall speziellere Rechtsgrundlagen
         maßgeblich sein, teilen wir Ihnen diese in der Datenschutzerklärung mit.
       </p>
+      <br />
       <ul>
         <li>
           <strong>
             Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1
             lit. b) DSGVO)
-          </strong>{" "}
+          </strong>
           - Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen
           Vertragspartei die betroffene Person ist, oder zur Durchführung
           vorvertraglicher Maßnahmen erforderlich, die auf Anfrage der
           betroffenen Person erfolgen.
         </li>
+        <br />
         <li>
           <strong>
             Rechtliche Verpflichtung (Art. 6 Abs. 1 S. 1 lit. c) DSGVO)
-          </strong>{" "}
+          </strong>
           - Die Verarbeitung ist zur Erfüllung einer rechtlichen Verpflichtung
           erforderlich, der der Verantwortliche unterliegt.
         </li>
+        <br />
         <li>
           <strong>
             Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO)
-          </strong>{" "}
+          </strong>
           - Die Verarbeitung ist zur Wahrung der berechtigten Interessen des
           Verantwortlichen oder eines Dritten erforderlich, sofern nicht die
           Interessen oder Grundrechte und Grundfreiheiten der betroffenen
           Person, die den Schutz personenbezogener Daten erfordern, überwiegen.
         </li>
       </ul>
+      <br />
       <p>
         <strong>Nationale Datenschutzregelungen in Deutschland: </strong>
         Zusätzlich zu den Datenschutzregelungen der DSGVO gelten nationale
@@ -165,6 +193,7 @@ const PrivacyPolicyContent = () => {
         einschließlich Profiling. Ferner können Landesdatenschutzgesetze der
         einzelnen Bundesländer zur Anwendung gelangen.
       </p>
+      <br />
       <p>
         <strong>Hinweis auf Geltung DSGVO und Schweizer DSG: </strong>Diese
         Datenschutzhinweise dienen sowohl der Informationserteilung nach dem
@@ -180,7 +209,12 @@ const PrivacyPolicyContent = () => {
         Die gesetzliche Bedeutung der Begriffe wird jedoch im Rahmen der Geltung
         des Schweizer DSG weiterhin nach dem Schweizer DSG bestimmt.
       </p>
-      <p id="m27">Sicherheitsmaßnahmen</p>
+      <br />
+      <br />
+      <p id="m27">
+        <strong>Sicherheitsmaßnahmen</strong>
+      </p>
+      <br />
       <p>
         Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter
         Berücksichtigung des Stands der Technik, der Implementierungskosten und
@@ -190,6 +224,7 @@ const PrivacyPolicyContent = () => {
         technische und organisatorische Maßnahmen, um ein dem Risiko
         angemessenes Schutzniveau zu gewährleisten.
       </p>
+      <br />
       <p>
         Zu den Maßnahmen gehören insbesondere die Sicherung der Vertraulichkeit,
         Integrität und Verfügbarkeit von Daten durch Kontrolle des physischen
@@ -203,6 +238,7 @@ const PrivacyPolicyContent = () => {
         entsprechend dem Prinzip des Datenschutzes, durch Technikgestaltung und
         durch datenschutzfreundliche Voreinstellungen.
       </p>
+      <br />
       <p>
         TLS/SSL-Verschlüsselung (https): Um die Daten der Benutzer, die über
         unsere Online-Dienste übertragen werden, zu schützen, verwenden wir
@@ -214,12 +250,18 @@ const PrivacyPolicyContent = () => {
         Hyper Text Transfer Protocol Secure (HTTPS) wird in der URL angezeigt,
         wenn eine Website durch ein SSL/TLS-Zertifikat gesichert ist.
       </p>
-      <p id="m10">Rechte der betroffenen Personen</p>
+      <br />
+      <br />
+      <p id="m10">
+        <strong>Rechte der betroffenen Personen</strong>
+      </p>
+      <br />
       <p>
         Rechte der betroffenen Personen aus der DSGVO: Ihnen stehen als
         Betroffene nach der DSGVO verschiedene Rechte zu, die sich insbesondere
         aus Art. 15 bis 21 DSGVO ergeben:
       </p>
+      <br />
       <ul>
         <li>
           <strong>
@@ -236,31 +278,36 @@ const PrivacyPolicyContent = () => {
             Direktwerbung in Verbindung steht.
           </strong>
         </li>
+        <br />
         <li>
           <strong>Widerrufsrecht bei Einwilligungen:</strong> Sie haben das
           Recht, erteilte Einwilligungen jederzeit zu widerrufen.
         </li>
+        <br />
         <li>
           <strong>Auskunftsrecht:</strong> Sie haben das Recht, eine Bestätigung
           darüber zu verlangen, ob betreffende Daten verarbeitet werden und auf
           Auskunft über diese Daten sowie auf weitere Informationen und Kopie
           der Daten entsprechend den gesetzlichen Vorgaben.
         </li>
+        <br />
         <li>
           <strong>Recht auf Berichtigung:</strong> Sie haben entsprechend den
           gesetzlichen Vorgaben das Recht, die Vervollständigung der Sie
           betreffenden Daten oder die Berichtigung der Sie betreffenden
           unrichtigen Daten zu verlangen.
         </li>
+        <br />
         <li>
           <strong>
             Recht auf Löschung und Einschränkung der Verarbeitung:
-          </strong>{" "}
+          </strong>
           Sie haben nach Maßgabe der gesetzlichen Vorgaben das Recht, zu
           verlangen, dass Sie betreffende Daten unverzüglich gelöscht werden,
           bzw. alternativ nach Maßgabe der gesetzlichen Vorgaben eine
           Einschränkung der Verarbeitung der Daten zu verlangen.
         </li>
+        <br />
         <li>
           <strong>Recht auf Datenübertragbarkeit:</strong> Sie haben das Recht,
           Sie betreffende Daten, die Sie uns bereitgestellt haben, nach Maßgabe
@@ -268,6 +315,7 @@ const PrivacyPolicyContent = () => {
           maschinenlesbaren Format zu erhalten oder deren Übermittlung an einen
           anderen Verantwortlichen zu fordern.
         </li>
+        <br />
         <li>
           <strong>Beschwerde bei Aufsichtsbehörde:</strong> Sie haben
           unbeschadet eines anderweitigen verwaltungsrechtlichen oder
@@ -279,7 +327,12 @@ const PrivacyPolicyContent = () => {
           verstößt.
         </li>
       </ul>
-      <p id="m317">Geschäftliche Leistungen</p>
+      <br />
+      <br />
+      <p id="m317">
+        <strong>Geschäftliche Leistungen</strong>
+      </p>
+      <br />
       <p>
         Wir verarbeiten Daten unserer Vertrags- und Geschäftspartner, z.B.
         Kunden und Interessenten (zusammenfassend bezeichnet als
@@ -288,6 +341,7 @@ const PrivacyPolicyContent = () => {
         Kommunikation mit den Vertragspartnern (oder vorvertraglich), z.B., um
         Anfragen zu beantworten.
       </p>
+      <br />
       <p>
         Wir verarbeiten diese Daten, um unsere vertraglichen Verpflichtungen zu
         erfüllen. Dazu gehören insbesondere die Verpflichtungen zur Erbringung
@@ -309,12 +363,14 @@ const PrivacyPolicyContent = () => {
         Formen der Verarbeitung, z.B. zu Marketingzwecken, werden die
         Vertragspartner im Rahmen dieser Datenschutzerklärung informiert.
       </p>
+      <br />
       <p>
         Welche Daten für die vorgenannten Zwecke erforderlich sind, teilen wir
         den Vertragspartnern vor oder im Rahmen der Datenerhebung, z.B. in
         Onlineformularen, durch besondere Kennzeichnung (z.B. Farben) bzw.
         Symbole (z.B. Sternchen o.ä.), oder persönlich mit.
       </p>
+      <br />
       <p>
         Wir löschen die Daten nach Ablauf gesetzlicher Gewährleistungs- und
         vergleichbarer Pflichten, d.h., grundsätzlich nach Ablauf von 4 Jahren,
@@ -334,12 +390,14 @@ const PrivacyPolicyContent = () => {
         Aufzeichnung vorgenommen worden ist oder die sonstigen Unterlagen
         entstanden sind.
       </p>
+      <br />
       <p>
         Soweit wir zur Erbringung unserer Leistungen Drittanbieter oder
         Plattformen einsetzen, gelten im Verhältnis zwischen den Nutzern und den
         Anbietern die Geschäftsbedingungen und Datenschutzhinweise der
         jeweiligen Drittanbieter oder Plattformen.
       </p>
+      <br />
       <ul className="m-elements">
         <li>
           <strong>Verarbeitete Datenarten:</strong> Bestandsdaten (z.B. Namen,
@@ -347,16 +405,19 @@ const PrivacyPolicyContent = () => {
           Zahlungshistorie); Kontaktdaten (z.B. E-Mail, Telefonnummern);
           Vertragsdaten (z..B. Vertragsgegenstand, Laufzeit, Kundenkategorie).
         </li>
+        <br />
         <li>
           <strong>Betroffene Personen:</strong> Interessenten. Geschäfts- und
           Vertragspartner.
         </li>
+        <br />
         <li>
           <strong>Zwecke der Verarbeitung:</strong> Erbringung vertraglicher
           Leistungen und Erfüllung vertraglicher Pflichten; Kontaktanfragen und
           Kommunikation; Büro- und Organisationsverfahren. Verwaltung und
           Beantwortung von Anfragen.
         </li>
+        <br />
         <li className="">
           <strong>Rechtsgrundlagen:</strong> Vertragserfüllung und
           vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO);
@@ -364,11 +425,13 @@ const PrivacyPolicyContent = () => {
           Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).
         </li>
       </ul>
+      <br />
       <p>
         <strong>
           Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
         </strong>
       </p>
+      <br />
       <ul className="m-elements">
         <li>
           <strong>Projekt- und Entwicklungsleistungen: </strong>Wir verarbeiten
@@ -378,7 +441,6 @@ const PrivacyPolicyContent = () => {
           Tätigkeiten als auch deren Bezahlung und Zurverfügungstellung bzw.
           Ausführung oder Erbringung zu ermöglichen.
           <br />
-          <br />
           Die erforderlichen Angaben sind als solche im Rahmen des Auftrags-,
           Bestell- bzw. vergleichbaren Vertragsschlusses gekennzeichnet und
           umfassen die zur Leistungserbringung und Abrechnung benötigten Angaben
@@ -387,13 +449,19 @@ const PrivacyPolicyContent = () => {
           anderer Personen erhalten, verarbeiten wir diese im Einklang mit den
           gesetzlichen und vertraglichen Vorgaben;
           <br />
+          <br />
           <span className="">
             <strong>Rechtsgrundlagen:</strong> Vertragserfüllung und
             vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO).
           </span>
         </li>
       </ul>
-      <p id="m182">Kontakt- und Anfragenverwaltung</p>
+      <br />
+      <br />
+      <p id="m182">
+        <strong>Kontakt- und Anfragenverwaltung</strong>
+      </p>
+      <br />
       <p>
         Bei der Kontaktaufnahme mit uns (z.B. per Post, Kontaktformular, E-Mail,
         Telefon oder via soziale Medien) sowie im Rahmen bestehender Nutzer- und
@@ -401,6 +469,7 @@ const PrivacyPolicyContent = () => {
         verarbeitet soweit dies zur Beantwortung der Kontaktanfragen und
         etwaiger angefragter Maßnahmen erforderlich ist.
       </p>
+      <br />
       <ul className="m-elements">
         <li>
           <strong>Verarbeitete Datenarten:</strong> Kontaktdaten (z.B. E-Mail,
@@ -410,32 +479,38 @@ const PrivacyPolicyContent = () => {
           IP-Adressen, Zeitangaben, Identifikationsnummern,
           Einwilligungsstatus).
         </li>
+        <br />
         <li>
           <strong>Betroffene Personen:</strong> Kommunikationspartner.
         </li>
+        <br />
         <li>
           <strong>Zwecke der Verarbeitung:</strong> Kontaktanfragen und
           Kommunikation; Verwaltung und Beantwortung von Anfragen; Feedback
           (z.B. Sammeln von Feedback via Online-Formular). Bereitstellung
           unseres Onlineangebotes und Nutzerfreundlichkeit.
         </li>
+        <br />
         <li className="">
           <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs.
           1 S. 1 lit. f) DSGVO). Vertragserfüllung und vorvertragliche Anfragen
           (Art. 6 Abs. 1 S. 1 lit. b) DSGVO).
         </li>
       </ul>
+      <br />
       <p>
         <strong>
           Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
         </strong>
       </p>
+      <br />
       <ul className="m-elements">
         <li>
           <strong>Kontaktformular: </strong>Wenn Nutzer über unser
           Kontaktformular, E-Mail oder andere Kommunikationswege mit uns in
           Kontakt treten, verarbeiten wir die uns in diesem Zusammenhang
-          mitgeteilten Daten zur Bearbeitung des mitgeteilten Anliegens;{" "}
+          mitgeteilten Daten zur Bearbeitung des mitgeteilten Anliegens;
+          <br />
           <span className="">
             <strong>Rechtsgrundlagen:</strong> Vertragserfüllung und
             vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b) DSGVO),
@@ -443,7 +518,12 @@ const PrivacyPolicyContent = () => {
           </span>
         </li>
       </ul>
-      <p id="m263">Webanalyse, Monitoring und Optimierung</p>
+      <br />
+      <br />
+      <p id="m263">
+        <strong>Webanalyse, Monitoring und Optimierung</strong>
+      </p>
+      <br />
       <p>
         Die Webanalyse (auch als "Reichweitenmessung" bezeichnet) dient der
         Auswertung der Besucherströme unseres Onlineangebotes und kann
@@ -452,13 +532,15 @@ const PrivacyPolicyContent = () => {
         umfassen. Mit Hilfe der Reichweitenanalyse können wir z.B. erkennen, zu
         welcher Zeit unser Onlineangebot oder dessen Funktionen oder Inhalte am
         häufigsten genutzt werden oder zur Wiederverwendung einladen. Ebenso
-        können wir nachvollziehen, welche Bereiche der Optimierung bedürfen.{" "}
+        können wir nachvollziehen, welche Bereiche der Optimierung bedürfen.
       </p>
+      <br />
       <p>
         Neben der Webanalyse können wir auch Testverfahren einsetzen, um z.B.
         unterschiedliche Versionen unseres Onlineangebotes oder seiner
         Bestandteile zu testen und optimieren.
       </p>
+      <br />
       <p>
         Sofern nachfolgend nicht anders angegeben, können zu diesen Zwecken
         Profile, d.h. zu einem Nutzungsvorgang zusammengefasste Daten angelegt
@@ -471,6 +553,7 @@ const PrivacyPolicyContent = () => {
         der von uns eingesetzten Dienste einverstanden erklärt haben, können
         auch Standortdaten verarbeitet werden.
       </p>
+      <br />
       <p>
         Es werden ebenfalls die IP-Adressen der Nutzer gespeichert. Jedoch
         nutzen wir ein IP-Masking-Verfahren (d.h., Pseudonymisierung durch
@@ -481,6 +564,7 @@ const PrivacyPolicyContent = () => {
         kennen nicht die tatsächliche Identität der Nutzer, sondern nur den für
         Zwecke der jeweiligen Verfahren in deren Profilen gespeicherten Angaben.
       </p>
+      <br />
       <ul className="m-elements">
         <li>
           <strong>Verarbeitete Datenarten:</strong> Nutzungsdaten (z.B. besuchte
@@ -488,21 +572,29 @@ const PrivacyPolicyContent = () => {
           Kommunikations- und Verfahrensdaten (z..B. IP-Adressen, Zeitangaben,
           Identifikationsnummern, Einwilligungsstatus).
         </li>
+        <br />
         <li>
           <strong>Betroffene Personen:</strong> Nutzer (z..B. Webseitenbesucher,
           Nutzer von Onlinediensten).
         </li>
+        <br />
         <li>
           <strong>Zwecke der Verarbeitung:</strong> Reichweitenmessung (z.B.
           Zugriffsstatistiken, Erkennung wiederkehrender Besucher). Profile mit
           nutzerbezogenen Informationen (Erstellen von Nutzerprofilen).
         </li>
+        <br />
         <li>
           <strong>Sicherheitsmaßnahmen:</strong> IP-Masking (Pseudonymisierung
           der IP-Adresse).
         </li>
       </ul>
-      <p id="m328">Plugins und eingebettete Funktionen sowie Inhalte</p>
+      <br />
+      <br />
+      <p id="m328">
+        <strong>Plugins und eingebettete Funktionen sowie Inhalte</strong>
+      </p>
+      <br />
       <p>
         Wir binden in unser Onlineangebot Funktions- und Inhaltselemente ein,
         die von den Servern ihrer jeweiligen Anbieter (nachfolgend bezeichnet
@@ -510,6 +602,7 @@ const PrivacyPolicyContent = () => {
         Grafiken, Videos oder Stadtpläne handeln (nachfolgend einheitlich
         bezeichnet als "Inhalte").
       </p>
+      <br />
       <p>
         Die Einbindung setzt immer voraus, dass die Drittanbieter dieser Inhalte
         die IP-Adresse der Nutzer verarbeiten, da sie ohne die IP-Adresse die
@@ -528,6 +621,7 @@ const PrivacyPolicyContent = () => {
         enthalten als auch mit solchen Informationen aus anderen Quellen
         verbunden werden.
       </p>
+      <br />
       <ul className="m-elements">
         <li>
           <strong>Verarbeitete Datenarten:</strong> Nutzungsdaten (z.B. besuchte
@@ -535,24 +629,29 @@ const PrivacyPolicyContent = () => {
           Kommunikations- und Verfahrensdaten (z..B. IP-Adressen, Zeitangaben,
           Identifikationsnummern, Einwilligungsstatus).
         </li>
+        <br />
         <li>
           <strong>Betroffene Personen:</strong> Nutzer (z..B. Webseitenbesucher,
           Nutzer von Onlinediensten).
         </li>
+        <br />
         <li>
           <strong>Zwecke der Verarbeitung:</strong> Bereitstellung unseres
           Onlineangebotes und Nutzerfreundlichkeit.
         </li>
+        <br />
         <li className="">
           <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs.
           1 S. 1 lit. f) DSGVO).
         </li>
       </ul>
+      <br />
       <p>
         <strong>
           Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:
         </strong>
       </p>
+      <br />
       <ul className="m-elements">
         <li>
           <strong>Google Fonts (Bezug vom Google Server): </strong>Bezug von
@@ -599,23 +698,31 @@ const PrivacyPolicyContent = () => {
           der Schriftartenanfragen generiert werden kann. Google verwendet laut
           eigener Auskunft keine der von Google Fonts erfassten Informationen,
           um Profile von Endnutzern zu erstellen oder zielgerichtete Anzeigen zu
-          schalten; <strong>Dienstanbieter:</strong> Google Ireland Limited,
-          Gordon House, Barrow Street, Dublin 4, Irland;{" "}
+          schalten; <br />
+          <strong>Dienstanbieter:</strong> Google Ireland Limited, Gordon House,
+          Barrow Street, Dublin 4, Irland;
           <span className="">
+            <br />
             <strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6
-            Abs. 1 S. 1 lit. f) DSGVO);{" "}
+            Abs. 1 S. 1 lit. f) DSGVO);
           </span>
-          <strong>Website:</strong>{" "}
+          <br />
+          <strong>Website:</strong>
           <a href="https://fonts.google.com/" target="_blank">
             https://fonts.google.com/
           </a>
-          ; <strong>Datenschutzerklärung:</strong>{" "}
+          ;
+          <strong>
+            <br />
+            Datenschutzerklärung:
+          </strong>
           <a href="https://policies.google.com/privacy" target="_blank">
             https://policies.google.com/privacy
           </a>
-          ; <strong>Grundlage Drittlandübermittlung:</strong>{" "}
-          <span className=""> EU-US Data Privacy Framework (DPF)</span>.{" "}
-          <strong>Weitere Informationen:</strong>{" "}
+          ; <br />
+          <strong>Grundlage Drittlandübermittlung:</strong>
+          <span className=""> EU-US Data Privacy Framework (DPF)</span>.<br />
+          <strong>Weitere Informationen:</strong>
           <a
             href="https://developers.google.com/fonts/faq/privacy?hl=de"
             target="_blank"
@@ -625,7 +732,12 @@ const PrivacyPolicyContent = () => {
           .
         </li>
       </ul>
-      <p id="m15">Änderung und Aktualisierung der Datenschutzerklärung</p>
+      <br />
+      <br />
+      <p id="m15">
+        <strong>Änderung und Aktualisierung der Datenschutzerklärung</strong>
+      </p>
+      <br />
       <p>
         Wir bitten Sie, sich regelmäßig über den Inhalt unserer
         Datenschutzerklärung zu informieren. Wir passen die Datenschutzerklärung
@@ -634,12 +746,14 @@ const PrivacyPolicyContent = () => {
         Änderungen eine Mitwirkungshandlung Ihrerseits (z.B. Einwilligung) oder
         eine sonstige individuelle Benachrichtigung erforderlich wird.
       </p>
+      <br />
       <p>
         Sofern wir in dieser Datenschutzerklärung Adressen und
         Kontaktinformationen von Unternehmen und Organisationen angeben, bitten
         wir zu beachten, dass die Adressen sich über die Zeit ändern können und
         bitten die Angaben vor Kontaktaufnahme zu prüfen.
       </p>
+      <br />
       <p className="seal">
         <a
           href="https://datenschutz-generator.de/"

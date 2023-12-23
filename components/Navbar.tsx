@@ -10,7 +10,15 @@ const Navbar = () => {
 
   return (
     <div className="hidden xl:visible w-full hover:bg-[#1FD0FD] group z-50 fixed xl:flex h-[100px] px-10 items-center bg-opacity-0 hover:bg-opacity-100 hover:shadow-xl ease-in duration-300">
-      <div className="group-hover:invert duration-300 ease-in">
+      <div
+        className="cursor-pointer group-hover:invert duration-300 ease-in"
+        onClick={() => {
+          if (document.location.pathname != "/") window.location.href = "/";
+        }}
+        onKeyDown={() => {
+          if (document.location.pathname != "/") window.location.href = "/";
+        }}
+      >
         <Logo />
       </div>
       <div className="w-full font-black">
@@ -110,7 +118,17 @@ const Navbar = () => {
           ></div>
         </div>
       </div>
-      <div className="group-hover:invert duration-300 ease-in">
+      <div
+        className="cursor-pointer group-hover:invert duration-300 ease-in"
+        onClick={() => {
+          if (document.location.pathname != "/imprint")
+            window.location.href = "/imprint";
+        }}
+        onKeyDown={() => {
+          if (document.location.pathname != "/imprint")
+            window.location.href = "/imprint";
+        }}
+      >
         <Copyright />
       </div>
     </div>

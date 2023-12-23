@@ -39,7 +39,14 @@ const NavbarMobile = () => {
   return (
     <div className="xl:hidden overflow-hidden">
       <div className="fixed z-50 px-6 md:px-10 w-full h-[100px] flex justify-center items-center overflow-hidden">
-        <div>
+        <div
+          onClick={() => {
+            if (document.location.pathname != "/") window.location.href = "/";
+          }}
+          onKeyDown={() => {
+            if (document.location.pathname != "/") window.location.href = "/";
+          }}
+        >
           <Logo />
         </div>
         <div className="w-full h-full flex justify-center">
