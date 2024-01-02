@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import Logo from "../components/images/Logo";
-import Smile from "./images/navbar/Smile";
-import SwipeMotion from "../pages/api/SwipeMotion";
-import TouchMotion from "../pages/api/TouchMotion";
-import ScrollPosition from "../pages/api/ScrollPosition";
+import Logo from "../images/Logo";
+import Smile from "../images/navbar/Smile";
+import SwipeMotion from "../../pages/api/SwipeMotion";
+import TouchMotion from "../../pages/api/TouchMotion";
+import ScrollPosition from "../../pages/api/ScrollPosition";
 import { useState } from "react";
-import Menu from "./images/navbar/Menu";
+import Menu from "../images/navbar/Menu";
 
 var menuOpen = false;
 

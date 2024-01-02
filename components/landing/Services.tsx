@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import WebDev from "./images/services/WebDev";
-import Graphic from "./images/services/Graphic";
-import Guidance from "./images/services/Guidance";
-import GuidanceGraphic from "./images/services/GuidanceGraphic";
-import ScrollPosition from "../pages/api/ScrollPosition";
-import MouseMotion from "../pages/api/MouseMotion";
+import WebDev from "../images/services/WebDev";
+import Graphic from "../images/services/Graphic";
+import Guidance from "../images/services/Guidance";
+import GuidanceGraphic from "../images/services/GuidanceGraphic";
+import ScrollPosition from "../../pages/api/ScrollPosition";
+import MouseMotion from "../../pages/api/MouseMotion";
 import { useEffect, useState } from "react";
 
 const map = (

@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import Globe from "./images/about/Globe";
-import Logos from "./images/about/Logos";
-import Avatar from "./images/about/Avatar";
-import MouseMotion from "../pages/api/MouseMotion";
+import Globe from "../images/about/Globe";
+import Logos from "../images/about/Logos";
+import Avatar from "../images/about/Avatar";
+import MouseMotion from "../../pages/api/MouseMotion";
 
 const About = () => {
   const { mouseX, mouseY, maxW, maxH }: any = MouseMotion();

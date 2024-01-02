@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import Together from "./images/contact/Together";
+import Together from "../images/contact/Together";
 import { useEffect } from "react";
-import ScrollPosition from "../pages/api/ScrollPosition";
+import ScrollPosition from "../../pages/api/ScrollPosition";
 
 const map = (
   in_start: number,

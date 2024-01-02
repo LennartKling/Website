@@ -1,6 +1,6 @@
 import React from "react";
-import CursorImg from "./images/work/CursorImg";
-import MouseMotion from "../pages/api/MouseMotion";
+import CursorImg from "../images/work/CursorImg";
+import MouseMotion from "../../pages/api/MouseMotion";
 
 const Cursor = () => {
   const { mouseX, mouseY }: any = MouseMotion();

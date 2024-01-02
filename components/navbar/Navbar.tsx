@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import Logo from "../components/images/Logo";
-import Copyright from "./images/navbar/Copyright";
-import Smile from "./images/navbar/Smile";
-import ScrollPosition from "../pages/api/ScrollPosition";
+import Logo from "../images/Logo";
+import Copyright from "../images/navbar/Copyright";
+import Smile from "../images/navbar/Smile";
+import ScrollPosition from "../../pages/api/ScrollPosition";
 
-const Navbar = () => {
+const Navbar = (props: any) => {
   let scroll_y: any = ScrollPosition().y;
 
   return (

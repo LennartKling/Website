@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import NavbarMobile from "../components/NavbarMobile";
-import PrivacyPolicyContent from "../components/PrivacyPolicyContent";
+import Navbar from "../components/navbar/Navbar";
+import NavbarMobile from "../components/navbar/NavbarMobile";
+import PrivacyPolicyContent from "../components/legal/PrivacyPolicyContent";
 
 export default function Privacy() {
   return (

@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import Face from "../components/images/hero/Face";
-import Star from "../components/images/hero/Star";
-import Flower from "../components/images/hero/Flower";
-import Medal from "../components/images/hero/Medal";
-import Name from "../components/images/hero/Name";
-import MouseMotion from "../pages/api/MouseMotion";
+import Face from "../images/hero/Face";
+import Star from "../images/hero/Star";
+import Flower from "../images/hero/Flower";
+import Medal from "../images/hero/Medal";
+import Name from "../images/hero/Name";
+import MouseMotion from "../../pages/api/MouseMotion";
 
 const Hero = () => {
   const { mouseX, mouseY, maxW, maxH }: any = MouseMotion();

@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Navbar from "../components/Navbar";
-import NavbarMobile from "../components/NavbarMobile";
-import ImprintContent from "../components/ImprintContent";
+import Navbar from "../components/navbar/Navbar";
+import NavbarMobile from "../components/navbar/NavbarMobile";
+import ImprintContent from "../components/legal/ImprintContent";
 
 export default function Imprint() {
   return (
