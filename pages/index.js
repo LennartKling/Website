@@ -1,26 +1,20 @@
 import Head from "next/head";
-import Navbar from "../components/navbar/Navbar";
-import NavbarMobile from "../components/navbar/NavbarMobile";
-import Hero from "../components/landing/Hero";
-import Work from "../components/landing/Work";
-import Services from "../components/landing/Services";
-import About from "../components/landing/About";
-import Contact from "../components/landing/Contact";
+import Hero from "../components/Hero";
+import Info from "../components/Info";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Luis Kameter</title>
-        <link rel="icon" href="/images/favicon.ico" />
-      </Head>
-      <Navbar />
-      <NavbarMobile />
-      <Hero />
-      <Work />
-      <Services />
-      <About />
-      <Contact />
+    <div className="bg-white flex justify-center">
+      <div className="max-w-[1300px] w-full">
+        <Head>
+          <title>Wlokno Merchandise</title>
+          <link rel="icon" href="/images/favicon.ico" />
+        </Head>
+        <Navbar />
+        <Hero />
+        <Info />
+      </div>
     </div>
   );
 }

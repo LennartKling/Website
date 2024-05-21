@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Indie+Flower&family=Playfair+Display&family=Rubik+Maps&family=Cinzel&family=Diphylleia&family=Whisper&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,57 +9,7 @@ html, body {
 }
 
 body {
-  background-image: url("/images/background.jpg");
   user-select: none;
   overflow-x: hidden;
   max-width: 100vw;
-}
-
-.diphylleia {
-  font-family: 'Diphylleia', serif;
-}
-
-.whisper {
-  font-family: 'Whisper', serif;
-}
-
-.cinzel {
-  font-family: 'Cinzel', serif;
-}
-
-.rubik {
-  font-family: 'Rubik Maps', serif;
-}
-
-.cormorant {
-  font-family: 'Cormorant Garamond', serif;
-}
-
-.playfair {
-  font-family: 'Playfair Display', serif;
-}
-
-.indie {
-  font-family: 'Indie Flower', cursive;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  } to {
-    transform: rotate(360deg);
-  }
-}
-
-.spin-slow {
-  animation: spin 12s infinite linear;
-}
-
-.menu-active {
-  transform: translateY(0);
-}
-
-.nav-hover:hover > .smile {
-  opacity: 1;
-  transform: translateY(0);
 }
