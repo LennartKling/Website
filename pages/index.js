@@ -1,4 +1,7 @@
 import Head from "next/head";
+import Contact from "../components/Contact";
+import Faq from "../components/Faq";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Info from "../components/Info";
 import Navbar from "../components/Navbar";
@@ -14,6 +17,9 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Info />
+        <Faq />
+        <Contact />
+        <Footer />
       </div>
     </div>
   );

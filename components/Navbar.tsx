@@ -1,15 +1,21 @@
 const Navbar = () => {
   return (
-    <nav className="w-full py-4 flex justify-between h-[120px] bg-white">
-      <div className="flex items-center space-x-6">
-        <div className="relative w-[60px] h-[60px]">
+    <nav className="px-6 sm:px-10 2xl:px-0 w-full py-4 flex items-center justify-between h-[120px] bg-white">
+      <div className="sm:flex items-center sm:space-x-6">
+        <div className="ml-2 sm:ml-0 relative w-[40px] h-[40px] sm:w-[60px] sm:h-[60px]">
           <img src="/images/logo_wlokno.png" alt="logo" />
         </div>
-        <p className="text-2xl font-medium">Wlokno</p>
+        <a href="/" className="xl:text-2xl sm:text-xl font-medium">
+          Wlokno
+        </a>
       </div>
       <div className="flex items-center space-x-6">
-        <p className="text-2xl font-medium">About</p>
-        <p className="text-2xl font-medium">Contact</p>
+        <a href="#about" className="xl:text-2xl sm:text-xl font-medium">
+          Über uns
+        </a>
+        <a href="#contact" className="xl:text-2xl sm:text-xl font-medium">
+          Kontact
+        </a>
       </div>
     </nav>
   );
