@@ -14,7 +14,7 @@ const Navbar = () => {
           Über uns
         </a>
         <a href="#contact" className="xl:text-2xl sm:text-xl font-medium">
-          Kontact
+          Kontakt
         </a>
       </div>
     </nav>
