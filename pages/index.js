@@ -18,8 +18,8 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Info />
-        <Faq />
         <Downloads />
+        <Faq />
         <Contact />
         <Footer />
       </div>
